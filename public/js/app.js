@@ -7,7 +7,7 @@ function setup() {
   input = createColorPicker("#ff0000");
   input.class('color_picker');
 
-  socket = io.connect('http://localhost:3000');
+  socket = io.connect();
   socket.on('mouse', newDrawing);
 }
 
